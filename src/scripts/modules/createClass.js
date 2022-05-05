@@ -6,14 +6,14 @@ export class Button{
         keys = keys;
     }
 
-    createButton(styleButton, styleContent, language = 0){
+    createButton(styleButton, startValue, setAttrValue){
 
         let btn = document.createElement('button');
-        let contetnButton = document.createElement('div');
-
         btn.classList.add(styleButton);
-
-        contetnButton.classList.add(styleContent);
+        btn.textContent = startValue;
+        btn.setAttribute('data-value', setAttrValue);
+       
+        return btn;
     }
 
 }

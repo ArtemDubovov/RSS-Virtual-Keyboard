@@ -1,3 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: aqua;
+    padding-top: 50px;
+    textarea{
+        width: 820px;
+        display: block;
+        margin: 0px auto 100px;
+        padding-bottom: 50px;
+        height: 250px;
+        padding: 15px;
+        font-size: 18px;
+        font-family: sans-serif;
+    }
+    background-color: rgb(241, 223, 241);
+    .keyboard{
+        background-color: #33CCCC;
+        padding: 10px;
+        box-sizing: content-box;
+        border: 5px solid black;
+        border-radius: 15px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+        width: 820px;
+        button{
+            height: 48px;
+            min-width: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            transition: border-radius 0.3s, background-color 0.3s;
+            background-color: #009999;
+            border-radius: 5px;
+            color: rgb(241, 223, 241);
+            padding: 10px;
+            border: 1px solid #009999;
+            &:hover{
+                background-color: #5CCCCC;
+                border: 1px solid #006363;
+            }
+            &:active{
+                background-color: #FF7400;
+                border: 1px solid #006363;
+            }
+            &[data-value='Enter']{
+                width: 130px;
+            }
+            &[data-value='ShiftLeft']{
+                width: 114px;
+            }
+            &[data-value='ShiftRight']{
+                width: 96px;
+            }
+            &[data-value='Space']{
+                width: 345px;
+            }
+            &[data-value='Tab']{
+                width: 58px;
+            }
+        }
+        
+
+        .button-active{
+            border-radius: 25px;
+            background-color: #FF7400;
+        }
+        .button-option{
+            background-color: #006363;
+        }
+        .button-container{
+            color: #fff;
+
+        }
+    }
 }
