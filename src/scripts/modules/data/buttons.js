@@ -1,324 +1,384 @@
 // options: false, keys [english], [russian]
 
-export const BUTTONS = [
-    {   
-        keycode: 'Backquote',
+export const BUTTONS = {
+       
+    'Backquote' : {
         options: false, 
         keys : [['`','~'], ['ё', 'Ё']],
-    },
-    {
-        keycode: 'Digit1',
+        }
+    ,
+    'Digit1': {
         options: false, 
         keys : [['1','!'], ['1', '!']],
-    },
-    {   
-        keycode: 'Digit2',
+        }
+    ,
+    'Digit2': {
         options: false, 
         keys : [['2','@'], ['2', '\"']],
-    },
-    {  
-         keycode: 'Digit3',
+        }
+    ,
+    'Digit3': {
         options: false, 
         keys : [['3','#'], ['3', '№']],
-    },
-    {   
-        keycode: 'Digit4',
+        }    
+    ,
+       
+        'Digit4': {
         options: false, 
         keys : [['4','$'], ['4', ';']],
-    },
-    {
-        keycode: 'Digit5',
+        }
+    ,
+    
+         'Digit5': {
         options: false, 
         keys : [['5','%'], ['5', '%']],
-    },
-    {
-        keycode: 'Digit6',
+        }
+    ,
+    
+         'Digit6': {
         options: false, 
         keys : [['6','^'], ['6', ':']],
-    },
-    {
-        keycode: 'Digit7',
+        }
+    ,
+    
+         'Digit7': {
         options: false, 
         keys : [['7','&'], ['7', '?']],
-    },
-    {
-        keycode: 'Digit8',
+        }
+    ,
+         'Digit8': {
         options: false, 
         keys : [['8','*'], ['8', '*']],
-    },
-    {
-        keycode: 'Digit9',
+        }
+    ,
+    
+         'Digit9': {
         options: false,
         keys : [['9','('], ['9', '(']],
-    },
-    {
-        keycode: 'Digit0',
+        }
+    ,
+    
+         'Digit0': {
         options: false, 
         keys : [['0',')'], ['0', ')']],
-    },
-    {
-        keycode: 'Minus',
+        }
+    ,
+    
+         'Minus': {
         options: false, 
-        keys : [['-','_'], ['-', '_']],
-    },
-    {
-        keycode: 'Equal',
+        keys : [['-','_'], ['-', '_']]
+        }
+    ,
+    
+         'Equal': {
         options: false, 
         keys : [['=','+'], ['=', '+']],
-    },
-    {
-        keycode: 'Backspace',
+    }
+    ,
+    
+         'Backspace': {
         options: true,
         keys : 'Backspace',
-    },
-    {
-        keycode: 'Tab',
+         }
+    ,
+    
+         'Tab': {
         options: true, 
         keys : 'Tab',
-    },
-    {
-        keycode: 'KeyQ',
+         }
+    ,
+    
+         'KeyQ': {
         options: false, 
         keys : [['q','Q'], ['й', 'Й']],
-    },
-    {
-        keycode: 'KeyW',
+        }
+    ,
+    
+         'KeyW': {
         options: false, 
         keys : [['w','W'], ['ц', 'Ц']],
-    },
-    {
-        keycode: 'KeyE',
+        }
+    ,
+    
+         'KeyE': {
         options: false, 
         keys : [['e','E'], ['у', 'У']],
-    },
-    {
-        keycode: 'KeyR',
+        }
+    ,
+    
+         'KeyR': {
         options: false, 
         keys : [['r','R'], ['к', 'К']],
-    },
-    {
-        keycode: 'KeyT',
+        }
+    ,
+    
+         'KeyT': {
         options: false, 
         keys : [['t','T'], ['е', 'Е']],
-    },
-    {
-        keycode: 'KeyY',
+        }
+    ,
+    
+         'KeyY': {
         options: false, 
         keys : [['y','Y'], ['н', 'Н']],
-    },
-    {
-        keycode: 'KeyU',
+        }
+    ,
+    
+         'KeyU': {
         options: false, 
         keys : [['u','U'], ['г', 'Г']],
-    },
-    {
-        keycode: 'KeyI',
+        }
+    ,
+    
+         'KeyI': {
         options: false, 
         keys : [['i','I'], ['ш', 'Ш']],
-    },
-    {
-        keycode: 'KeyO',
+        }
+    ,
+    
+         'KeyO': {
         options: false, 
         keys : [['o','O'], ['щ', 'Щ']],
-    },
-    {
-        keycode: 'KeyP',
+        }
+    ,
+    
+         'KeyP': {
         options: false, 
         keys : [['p','P'], ['з', 'З']],
-    },
-    {
-        keycode: 'BracketLeft',
+        }
+    ,
+    
+         'BracketLeft': {
         options: false, 
         keys : [['[','{'], ['х', 'Х']],
-    },
-    {
-        keycode: 'BracketRight',
+        }
+    ,
+    
+         'BracketRight': {
         options: false, 
         keys : [[']','}'], ['ъ', 'Ъ']],
-    },
-    {
-        keycode: 'Backslash',
+        }
+    ,
+    
+         'Backslash': {
         options: false, 
         keys : [['\\','|'], ['\\', '/']],
-    },
-    {
-        keycode: 'Delete',
+        }
+    ,
+    
+         'Delete': {
         options: true, 
         keys : 'Del',
-    },
-    {
-        keycode: 'CapsLock',
+        }
+    ,
+    
+        'CapsLock': {
         options: true, 
         keys : 'CapsLock',
-    },
-    {
-        keycode: 'KeyA',
+        }
+    ,
+    
+         'KeyA': {
         options: false, 
         keys : [['a','A'], ['ф', 'Ф']],
-    },
-    {
-        keycode: 'KeyS',
+        }
+    ,
+    
+         'KeyS': {
         options: false, 
         keys : [['s','S'], ['ы', 'Ы']],
-    },
-    {
-        keycode: 'KeyD',
+        }
+    ,
+    
+         'KeyD': {
         options: false, 
         keys : [['d','D'], ['в', 'В']],
-    },
-    {
-        keycode: 'KeyF',
+        }
+    ,
+    
+         'KeyF': {
         options: false, 
         keys : [['f','F'], ['а', 'А']],
-    },
-    {
-        keycode: 'KeyG',
+        }
+    ,
+    
+         'KeyG': {
         options: false, 
         keys : [['g','G'], ['п', 'П']],
-    },
-    {
-        keycode: 'KeyH',
+        }
+    ,
+    
+         'KeyH': {
         options: false, 
         keys : [['h','H'], ['р', 'Р']],
-    },
-    {
-        keycode: 'KeyJ',
+        }
+    ,
+    
+         'KeyJ': {
         options: false, 
         keys : [['j','J'], ['о', 'О']],
-    },
-    {
-        keycode: 'KeyK',
+        }
+    ,
+    
+         'KeyK': {
         options: false, 
         keys : [['k','K'], ['л', 'Л']],
-    },
-    {
-        keycode: 'KeyL',
+        }
+    ,
+    
+         'KeyL': {
         options: false, 
         keys : [['l','L'], ['д', 'Д']],
-    },
-    {
-        keycode: 'Semicolon',
+        }
+    ,
+    
+         'Semicolon': {
         options: false, 
         keys : [[';',':'], ['ж', 'Ж']],
-    },
-    {
-        keycode: 'Quote',
+        }
+    ,
+    
+         'Quote': {
         options: false, 
         keys : [['\'','\"'], ['э', 'Э']],
-    },
-    {
-        keycode: 'Enter',
+        }
+    ,
+    
+         'Enter': {
         options: true, 
         keys : 'Enter',
-    },
-    {
-        keycode: 'ShiftLeft',
+        }
+    ,
+    
+         'ShiftLeft':{
         options: true, 
         keys : 'Shift',
-    },
-    {
-        keycode: 'KeyZ',
+        }
+    ,
+    
+         'KeyZ':{
         options: false, 
         keys : [['z','Z'], ['я', 'Я']],
-    },
-    {
-        keycode: 'KeyX',
+        }
+    ,
+    
+         'KeyX':{
         options: false, 
         keys : [['x','X'], ['ч', 'Ч']],
-    },
-    {
-        keycode: 'KeyC',
+        }
+    ,
+    
+         'KeyC':{
         options: false, 
         keys : [['c','C'], ['с', 'С']],
-    },
-    {
-        keycode: 'KeyV',
+        }
+    ,
+    
+         'KeyV':{
         options: false, 
         keys : [['v','V'], ['м', 'М']],
-    },
-    {
-        keycode: 'KeyB',
+        }
+    ,
+    
+         'KeyB':{
         options: false, 
         keys : [['b','B'], ['и', 'И']],
-    },
-    {
-        keycode: 'KeyN',
+        }
+    ,
+    
+         'KeyN':{
         options: false, 
         keys : [['n','N'], ['т', 'Т']],
-    },
-    {
-        keycode: 'KeyM',
+        }
+    ,
+    
+         'KeyM':{
         options: false, 
         keys : [['m','M'], ['ь', 'Ь']],
-    },
-    {
-        keycode: 'Comma',
+        }
+    ,
+    
+         'Comma':{
         options: false, 
         keys : [[',','<'], ['б', 'Б']],
-    },
-    {
-        keycode: 'Period',
+        }
+    ,
+    
+         'Period':{
         options: false, 
         keys : [['.','>'], ['ю', 'Ю']],
-    },
-    {
-        keycode: 'Slash',
+        }
+    ,
+    
+         'Slash':{
         options: false, 
         keys : [['/','?'], ['.', ',']],
-    },
-    {
-        keycode: 'ArrowUp',
+        }
+    ,
+    
+         'ArrowUp':{
         options: true, 
         keys : '▲',
-    },
-    {
-        keycode: 'ShiftRight',
+        }
+    ,
+    
+         'ShiftRight':{
         options: true, 
         keys : 'Shift',
-    },
-    {
-        keycode: 'ControlLeft',
+        }
+    ,
+    
+         'ControlLeft':{
         options: true, 
         keys : 'Ctrl',
-    },
-    {
-        keycode: 'MetaLeft',
+        }
+    ,
+    
+         'MetaLeft':{
         options: true, 
         keys : 'Win',
-    },
-    {
-        keycode: 'AltLeft',
+        }
+    ,
+    
+         'AltLeft':{
         options: true, 
         keys : 'Alt',
-    },
-    {
-        keycode: 'Space',
+        }
+    ,
+    
+        'Space':{
         options: true, 
         keys : 'Space',
-    },
-    {
-        keycode: 'AltRight',
+        }
+    ,
+    
+         'AltRight':{
         options: true, 
         keys : 'Alt',
-    },
-    {
-        keycode: 'ArrowLeft',
+        }
+    ,
+    
+         'ArrowLeft':{
         options: true, 
         keys : '◄',
-    },
-    {
-        keycode: 'ArrowDown',
+        }
+    ,
+    
+         'ArrowDown':{
         options: true, 
         keys : '▼',
-    },
-    {
-        keycode: 'ArrowRight',
+        }
+    ,
+    
+         'ArrowRight':{
         options: true, 
         keys : '►',
-    },
-    {
-        keycode: 'ControlRight',
+        }
+    ,
+    
+         'ControlRight':{
         options: true, 
         keys : 'Ctrl',
-    },
-]
+        }
+    ,
+}

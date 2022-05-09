@@ -37,7 +37,7 @@ body{
             justify-content: center;
             align-items: center;
             border: none;
-            transition: border-radius 0.3s, background-color 0.3s;
+            transition: border-radius 0.1s, background-color 0.1s;
             background-color: #009999;
             border-radius: 5px;
             color: rgb(241, 223, 241);
@@ -45,36 +45,42 @@ body{
             border: 1px solid #009999;
             &:hover{
                 background-color: #5CCCCC;
-                border: 1px solid #006363;
             }
             &:active{
+                border-radius: 25px;
                 background-color: #FF7400;
-                border: 1px solid #006363;
             }
             &[data-value='Enter']{
                 width: 130px;
             }
             &[data-value='ShiftLeft']{
-                width: 114px;
+                width: 130px;
             }
             &[data-value='ShiftRight']{
-                width: 96px;
+                width: 101px;
             }
             &[data-value='Space']{
-                width: 345px;
+                width: 394px;
             }
             &[data-value='Tab']{
-                width: 58px;
+                width: 77px;
+            }
+            &[data-value='Backspace']{
+                width: 130px;
+            }
+            &[data-value='CapsLock']{
+                width: 100px;
             }
         }
         
 
+
+        .button-option{
+            background-color: #006363;
+        }
         .button-active{
             border-radius: 25px;
             background-color: #FF7400;
-        }
-        .button-option{
-            background-color: #006363;
         }
         .button-container{
             color: #fff;
