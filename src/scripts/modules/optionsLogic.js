@@ -41,7 +41,6 @@ export function checkOptions(key, listButtons, resize, appConfig){
             click('optional', 'Backspace');
             break;
         case 'Delete':
-            console.log('del')
             click('optional', 'Delete');
             break;
     }

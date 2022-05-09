@@ -42,7 +42,6 @@ export function click(event, el, appConfig){
                     secondContent = content.slice(numberCaret, );
                     textArea.value = firstContent + secondContent;
                 }
-                console.log('delete')
                 textArea.selectionStart = numberCaret - 1;
                 textArea.selectionEnd = numberCaret - 1;
                 return;
@@ -62,8 +61,7 @@ export function click(event, el, appConfig){
                 || event.target.textContent == 'Alt' || event.target.textContent == 'Win'){
                     return;
                 }
-            } else if(event == 'optional'){
-                console.log('back', el, event.code)      
+            } else if(event == 'optional'){    
                 if(/(^Key)/.test(event.code)){
                     if(content.length == numberCaret){
     
@@ -80,12 +78,9 @@ export function click(event, el, appConfig){
                     backspace();
                     return;
                 } else if(el == 'Delete'){
-                    console.log('del')
                     del();
                     return;
                 }          
-            } else {
-                console.log('wrong');
             }
                                                                            // setting keys
             
@@ -98,7 +93,5 @@ export function click(event, el, appConfig){
             }            
             textArea.selectionStart = numberCaret + valueButton.length;
             textArea.selectionEnd = numberCaret + valueButton.length; 
-    } else {
-        console.error('1 if error');
     }
 }

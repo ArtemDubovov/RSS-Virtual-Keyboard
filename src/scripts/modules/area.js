@@ -3,7 +3,6 @@ export function createArea(){
     area.placeholder = 'Для смены языка комбинация ctrl + alt';
     area.setAttribute('autofocus', 'autofocus');
     area.addEventListener('blur', () => {
-        console.log('blur');
         area.focus();
         return false;
     })

@@ -15,6 +15,5 @@ export function chooseLang(parent, appConfig){
     } else {
         appConfig.lang = 0;
     }
-    console.log('язык смена')
 }
     

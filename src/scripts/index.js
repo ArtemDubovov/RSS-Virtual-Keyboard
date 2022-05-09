@@ -1,26 +1,16 @@
 import './../styles/style.scss'
-
 import {Button} from './modules/createClass'
-
 import {BUTTONS} from './modules/data/buttons'
-
 import {createKeyboard} from './modules/wrapper'
-
 import {createArea} from './modules/area'
-
 import {checkOptions} from './modules/optionsLogic'
-
 import {resize} from './modules/resize'
-
 import {click} from './modules/click'
-
 import {keyButton} from './modules/key'
-
 import {chooseLang} from './modules/chooseLang'
 
 
 let listButtons = [];
-console.log(localStorage.getItem('lang'));
 export const appConfig = { 
     lang :  localStorage.getItem('lang') || 0,                    // lang 0 - eng,   1 - rus
     size : 0,                    // size 0 - lower, 1 - uppers
@@ -81,28 +71,22 @@ document.body.addEventListener('keydown', (event) =>{
             return;
         }
     } else if(((event.code == 'AltLeft' && event.ctrlKey) || (event.code == 'AltRight' && event.ctrlKey)) && !appConfig.onLang){
-        console.log("Смена языка!")
         chooseLang(listButtons, appConfig);
+        let btn = document.querySelector(`[data-value=${event.code}]`);
+        btn.classList.add('button-active');
         appConfig.onLang = !appConfig.onLang;
-        console.log('app config lag', appConfig.lang)
         if(appConfig.lang == 0){
             localStorage.clear();
-            console.log(localStorage, 'clear')
             localStorage.setItem('lang', 0);
-            console.log(localStorage ,'eng')
         } else {
             localStorage.clear();
-            console.log(localStorage, 'clear')
             localStorage.setItem('lang', 1);
-            console.log(localStorage ,'rus')
-            
         }
         return;
     }
     if(BUTTONS.hasOwnProperty(event.code)){
         if(BUTTONS[event.code].options){
             event.preventDefault();
-            console.log(event.code)
             checkOptions(event.code, listButtons, resize, appConfig);
             let btn = document.querySelector(`[data-value=${event.code}]`);
             btn.classList.add('button-active');
@@ -174,7 +158,3 @@ keyboard.addEventListener('mouseup', (event) => {
         return;
     }
 });
-
-document.addEventListener('click', () => {
-    console.log(localStorage);
-})

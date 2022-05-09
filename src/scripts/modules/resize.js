@@ -1,5 +1,4 @@
-import { BUTTONS } from "./data/buttons";
-console.log(BUTTONS);
+
 
 export function resize(parent, appConfig, checkRegExp = false, regExp = '/.+/gi', lowerUpper = false){
     for(let el of parent){
@@ -19,7 +18,6 @@ export function resize(parent, appConfig, checkRegExp = false, regExp = '/.+/gi'
         }
     }
     if(lowerUpper){
-        console.log('смена высоты')
         if(appConfig.size == 0){
             appConfig.size = 1;
         } else {
